@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, useMediaQuery } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import red from "@mui/material/colors/red";
 import Typography from "@mui/material/Typography";
@@ -6,6 +6,10 @@ import { useColorScheme } from "@mui/material/styles";
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const prefersLightMode = useMediaQuery("(prefers-color-scheme: light)");
+  console.log("prefers-color-scheme", prefersDarkMode);
+  console.log("prefers-color-scheme", prefersLightMode);
   return (
     <Button
       onClick={() => {
