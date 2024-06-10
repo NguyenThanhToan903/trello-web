@@ -1,11 +1,11 @@
-import Container from "@mui/material/Container";
+import Board from "./pages/Boards/_id";
 
 function App() {
   return (
     <>
-      <Container
-        sx={{ height: "100vh", backgroundColor: "primary.main" }}
-      ></Container>
+      {/* React Router Dom /boards /boards/{board_id} */}
+      {/* Board Details */}
+      <Board />
     </>
   );
 }
