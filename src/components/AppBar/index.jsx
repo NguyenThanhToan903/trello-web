@@ -29,7 +29,7 @@ function AppBar() {
         alignItems: "center",
         justifyContent: "space-between",
         gap: 2,
-        // overflowX: "auto",
+        overflowX: "auto",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
