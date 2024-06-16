@@ -16,6 +16,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import Templates from "./Menus/Templates";
 import Workspaces from "./Menus/Workspaces";
 import Profiles from "./Menus/Profiles";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 function AppBar() {
   const theme = useTheme();
   return (
@@ -59,7 +60,9 @@ function AppBar() {
           <Starred />
           <Templates />
         </Box>
-        <Button variant="outlined">Create</Button>
+        <Button variant="outlined" startIcon={<LibraryAddIcon />}>
+          Create
+        </Button>
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <TextField
