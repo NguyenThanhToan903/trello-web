@@ -7,18 +7,18 @@ const theme = extendTheme({
     boardBarHeight: "60px",
   },
   colorSchemes: {
-    light: {
-      palette: {
-        primary: teal,
-        secondary: deepOrange,
-      },
-    },
-    dark: {
-      palette: {
-        primary: cyan,
-        secondary: orange,
-      },
-    },
+    // light: {
+    //   palette: {
+    //     primary: teal,
+    //     secondary: deepOrange,
+    //   },
+    // },
+    // dark: {
+    //   palette: {
+    //     primary: cyan,
+    //     secondary: orange,
+    //   },
+    // },
   },
   components: {
     MuiCssBaseline: {
@@ -48,7 +48,7 @@ const theme = extendTheme({
     MuiInputLabel: {
       styleOverrides: {
         root: ({ theme }) => ({
-          color: theme.palette.primary.main,
+          // color: theme.palette.primary.main,
           fontSize: "0.875rem",
         }),
       },
@@ -56,23 +56,18 @@ const theme = extendTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: ({ theme }) => ({
-          color: theme.palette.primary.main,
+          // color: theme.palette.primary.main,
           fontSize: "0.875rem",
-          ".MuiOutlinedInput-notchedOutline": {
-            borderColor: theme.palette.primary.light,
-            color: theme.palette.primary.light,
-          },
-          input: {
-            "&::placeholder": {
-              color: "red",
-              opacity: 1,
-            },
-          },
-          "&:hover": {
-            ".MuiOutlinedInput-notchedOutline": {
-              borderColor: theme.palette.primary.light,
-            },
-          },
+          // ".MuiOutlinedInput-notchedOutline": {
+          //   borderColor: theme.palette.primary.light,
+          //   color: theme.palette.primary.light,
+          // },
+
+          // "&:hover": {
+          //   ".MuiOutlinedInput-notchedOutline": {
+          //     borderColor: theme.palette.primary.light,
+          //   },
+          // },
         }),
       },
     },
